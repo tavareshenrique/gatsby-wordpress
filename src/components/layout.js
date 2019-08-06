@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -37,9 +38,14 @@ const Layout = ({ children }) => {
             paddingTop: 0,
           }}
         >
+          <Helmet>
+            <title>Henrique Tavares - think different.</title>
+          </Helmet>
           <Main>{children}</Main>
           <Footer>
-            twitter • github • stack overflow © {new Date().getFullYear()}
+            <a href="http://github.com/tavareshenrique">github</a> •{" "}
+            <a href="https://www.linkedin.com/in/tavareshenrique/">linkedin</a>{" "}
+            © {new Date().getFullYear()}
           </Footer>
         </div>
       </Container>

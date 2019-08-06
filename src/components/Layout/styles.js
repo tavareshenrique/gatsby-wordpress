@@ -13,5 +13,5 @@ export const Main = styled.div`
 `
 
 export const Footer = styled.div`
-  margin: 10px;
+  margin-top: 10px;
 `

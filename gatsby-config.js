@@ -1,6 +1,6 @@
-require('dotenv').config({
-  path: '.env',
-});
+require("dotenv").config({
+  path: ".env",
+})
 
 module.exports = {
   siteMetadata: {
@@ -29,14 +29,14 @@ module.exports = {
         background_color: `#282c35`,
         theme_color: `#282c35`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/HTLogo.png`, // This path is relative to the root of the site.
       },
     },
     {
-      resolve: 'gatsby-source-wordpress',
+      resolve: "gatsby-source-wordpress",
       options: {
-        baseUrl: 'henriquetavares.home.blog',
-        protocol: 'https',
+        baseUrl: "henriquetavares.home.blog",
+        protocol: "https",
         hostingWPCOM: true,
         useACF: false,
         auth: {
@@ -48,13 +48,13 @@ module.exports = {
         verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
-          sourceUrl: 'https://henriquetavares.home.blog',
-          replacementUrl: 'htttp://localhost:8000',
+          sourceUrl: "https://henriquetavares.home.blog",
+          replacementUrl: "htttp://localhost:8000",
         },
         concurrentRequests: 10,
         normalizer: function({ entities }) {
           return entities
-        }
+        },
       },
     },
     `gatsby-plugin-sitemap`,
