@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Henrique Tavares`,
     description: `this is my code life`,
+    subtitle: `Henrique Web`,
     author: `@ihenrits`,
   },
   plugins: [
@@ -45,12 +46,18 @@ module.exports = {
           wpcom_pass: process.env.WORDPRESS_PASSWORD,
         },
         verboseOutput: false,
+        perPage: 100,
         searchAndReplaceContentUrls: {
           sourceUrl: 'https://henriquetavares.home.blog',
-          replacementUrl: 'https://henriquetavares.home.blog',
+          replacementUrl: 'htttp://localhost:8000',
         },
+        concurrentRequests: 10,
+        normalizer: function({ entities }) {
+          return entities
+        }
       },
-},
+    },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
