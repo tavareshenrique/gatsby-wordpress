@@ -10,6 +10,13 @@ export const Main = styled.div`
   flex-direction: column;
   align-content: center;
   align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 42rem;
+  padding: 0.625rem 1.3125rem;
+
+  /* text-align: center; */
 `
 
 export const Footer = styled.div`

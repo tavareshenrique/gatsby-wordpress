@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
-import { Main } from "../components/Layout/styles"
+import { LinkGatsby } from "../components/Styles/indexStyle"
 
 const IndexPage = () => (
   <StaticQuery
@@ -31,7 +31,7 @@ const IndexPage = () => (
           <article>
             <header>
               <h3>
-                <Link
+                <LinkGatsby
                   to={`/post/${node.slug}`}
                   dangerouslySetInnerHTML={{ __html: node.title }}
                 />
