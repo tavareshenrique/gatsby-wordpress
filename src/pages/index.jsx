@@ -18,10 +18,7 @@ const IndexPage = () => (
               author {
                 name
               }
-              categories {
-                id
-                name
-              }
+
               slug
             }
           }
@@ -41,7 +38,8 @@ const IndexPage = () => (
               </h3>
               <small>{node.date}</small>
             </header>
-            <smal>{node.excerpt}</smal>
+            {/* <p>{node.excerpt}</p> */}
+            <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
           </article>
         ))}
 

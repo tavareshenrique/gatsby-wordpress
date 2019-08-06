@@ -10,7 +10,8 @@ const BlogPostTemplate = ({ data }) => (
       title={data.wordpressPost.title}
       description={data.wordpressPost.excerpt}
     />
-    <h1>{data.wordpressPost.title}</h1>
+    <h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />
+    {/* <h1>{data.wordpressPost.title}</h1> */}
     <p>
       {/* {data.wordpressPost.author.name} {`<${data.wordpressPost.date}>`}  */}
       {data.wordpressPost.date}
