@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
 html {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: #282c35;
 }
 body {
   margin: 0;
@@ -41,6 +43,7 @@ template {
 }
 a {
   background-color: transparent;
+  color: #f7e135;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -185,7 +188,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em "Montserrat", serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
